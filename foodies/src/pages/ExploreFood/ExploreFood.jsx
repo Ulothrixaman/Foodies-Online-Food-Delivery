@@ -13,7 +13,7 @@ const ExploreFood = () => {
           <div className="col-md-6">
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="input-group mb-3">
-                <select name="" id="" className="form-select mt-2" style={{'maxWidth':'150px'}} onChange={(e) => setCategory(e.target.value)}>
+                <select className="form-select mt-2" style={{'maxWidth':'150px'}} onChange={(e) => setCategory(e.target.value)}>
                   <option value="All">All</option>
                   <option value="Biryani">Biryani</option>
                   <option value="Cake">Cake</option>
