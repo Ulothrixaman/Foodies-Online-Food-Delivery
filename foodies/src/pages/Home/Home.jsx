@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../../component/Header/Header';
 import ExploreMenu from '../../component/ExploreMenu/ExploreMenu';
 import FoodDisplay from '../../component/FoodDisplay/FoodDisplay';
 
 const Home = () => {
+  const [category, setCategory] = useState('All');
+
   return (
     <main className="container">
         <Header />
-        <ExploreMenu />
-        <FoodDisplay />
+        <ExploreMenu category={category} setCategory={setCategory}/>
+        <FoodDisplay category={category} searchText={''}/>
     </main>
   )
 }
